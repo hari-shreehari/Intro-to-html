@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete HTML Form Example</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+    
+    <form>
+        <!-- Text Input -->
+            <label>Full Name:</label>
+            <input type="text" id="ip1" name="name" placeholder="Enter your name" required minlength="3" maxlength="50" size="30">
+            
+            <br><br>
+            
+            <!-- Email Input -->
+            <label >Email:</label>
+            <input type="email" id="ip2" name="email" placeholder="example@domain.com" required>
+
+        <br><br>
+A
+        <!-- Password Input -->
+        <label >Password:</label>
+        <input type="password" id="password" name="password" required minlength="8" maxlength="20">
+
+        <br><br>
+
+        <!-- Textarea -->
+        <label>Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Enter your message here..."></textarea>
+
+        <br><br>
+
+        <!-- Select Dropdown -->
+        <label>Country:</label>
+        <select id="country" name="country">
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+            <option value="au">Australia</option>
+        </select>
+
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="interests" value="music" checked>
+        <label for="music">Music</label>
+        <input type="checkbox" id="reading" name="interests" value="reading">
+        <label for="reading">Reading</label>
+
+        <br><br>
+
+        <!-- File Input -->
+        <label>Upload Photo:</label>
+        <input type="file" id="photo" name="photo" accept="images/*">
+
+        <br><br>
+
+        <!-- Date Input -->
+        <label>Birthday:</label>
+        <input type="date" id="birthday" name="birthday" min="1900-01-01" max="2023-12-31">
+
+        <br><br>
+
+        <!-- Range Input -->
+        <label>Rate our service (1-10):</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+
+        <br><br>
+
+        <!-- Color Picker -->
+        <label>Favorite Color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+
+        <br><br>
+
+        <!-- Submit and Reset Buttons -->
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+    </form>
+</body>
+</html>
