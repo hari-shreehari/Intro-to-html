@@ -1,0 +1,35 @@
+*{
+    background-image: url();
+}
+.grid-container{
+    display: grid;
+    background-color: blue;
+    border: red solid 4px;
+    padding: 20px;
+    grid-template-areas: 'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    ali
+}
+.grid-container div{
+    background-color: wheat;
+    text-align: center;
+    border: green solid 2px;
+    padding: 10px;
+}
+.item-1{
+    grid-area: header;
+}
+.item-2{
+    grid-area: footer;
+}
+.item-3{
+    grid-area: main;
+}
+.item-4{
+    grid-area: menu;
+}
+.item-5{
+    grid-area: right;
+}
+
